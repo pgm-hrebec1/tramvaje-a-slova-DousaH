@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Uloha 1: Pocet Slov",
+            "runtimeArgs": [ "--es-module-specifier-resolution=node" ],
+            "program": "${workspaceFolder}/src/pocetslov/slova.ts",
+            "args": [ "./src/pocetslov/data/slova1.txt" ],
+            "outFiles": ["${workspaceFolder}/out/**/*.js"],
+            "preLaunchTask": "tsc: build - tsconfig.json",
+            "console": "integratedTerminal",
+            "sourceMaps": true,
+            "showAsyncStacks": true,
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Uloha 3: Tramvajova zastavka",
+            "runtimeArgs": [ "--es-module-specifier-resolution=node" ],
+            "program": "${workspaceFolder}/src/tramvaje/tramvaje.ts",
+            "args": [ "./src/tramvaje/data/tramvaje1.txt" ],
+            "outFiles": ["${workspaceFolder}/out/**/*.js"],
+            "preLaunchTask": "tsc: build - tsconfig.json",
+            "console": "integratedTerminal",
+            "sourceMaps": true,
+            "showAsyncStacks": true,
+        }
+     ]
+}
